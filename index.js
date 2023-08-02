@@ -35,7 +35,7 @@ let punkData = punks.map((punk) => (
 
 for(punk in punkData) {
 
-  fs.writeFile('./'+ punk['identifier'] +'.json', JSON.stringify(punk), err => {
+  fs.writeFile('./leps/'+ punk['identifier'] +'.json', JSON.stringify(punk), err => {
     if (err) {
       console.error(err);
     }
